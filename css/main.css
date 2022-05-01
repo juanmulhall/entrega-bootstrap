@@ -33,6 +33,13 @@ body {
     left: -80px;
     top: 30px;
     display: inline-block;
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+
+.header-logo:hover{
+    transform: scale(1.1);
 }
 
 .header-titulo-index{
@@ -59,21 +66,7 @@ body {
     justify-content: center;
 }
 
-.header-navegador-index{
-
-    list-style: none;
-    justify-content: space-evenly;
-    border-style:solid;
-    border-radius: 15px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
-    position: relative;
-    top:-80px;
-}
-
-.header-navegador-nosotros{
+.header-navegador{
 
     list-style: none;
     justify-content: space-evenly;
@@ -88,10 +81,15 @@ body {
 }
 
 .nav-item{
-    padding: 30px 20px;
+    padding: 10px 10px;
     text-decoration: none;
     color: rgb(13, 13, 114);
     font-weight: 800;
+    transition-property: all;
+}
+
+.nav-item:hover{
+    text-decoration:underline;
 }
 
 /* ------- MAIN ------- */
@@ -99,6 +97,28 @@ body {
 main{
     margin-bottom: 50px;
     text-align: center;
+}
+
+.efecto1{
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+}
+
+.efecto1:hover{
+    transform: scale(1.1);
+}
+
+.efecto2{
+    transition-property: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.efecto2:hover{
+    transform: rotate(360deg);
 }
 
 main section{
@@ -167,11 +187,15 @@ h3{
     width:fit-content;       /*ancho*/
     height: fit-content;     /*alto*/   
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .formulario2-item{
     padding: 0px;
+}
+
+.formulario2-boton{
+    margin-top: 20px;
 }
 
 .lista-servicios-grid{
@@ -197,10 +221,7 @@ h3{
 .item7 { grid-area: item7; }
 .item8 { grid-area: item8; }
 
-.iframe{
-    width: auto;
-    height: auto;
-}
+.iframe{width: auto; height: auto;}
 
 .lista-videos-grid{
     list-style: none;
@@ -234,9 +255,7 @@ h3{
     margin-bottom: 20px;
 }
 
-img{
-    border-radius: 15px;
-}
+img {border-radius: 15px;}
 
 .footer {
     text-align: center;
@@ -254,7 +273,7 @@ img{
     .contacto{
         margin-bottom: 170px;
         }
-    /* NO ME FUNCIONA EL GRID SI COLOCO OTRO EN OTRA RESOLUCION MAYOR*/
+    
     .lista-servicios-grid{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -266,11 +285,10 @@ img{
     }
 
     .formulario2{
-        width: 600px;       /*ancho*/
-        height: 600px;     /*alto*/   
+        width: 550px;       /*ancho*/
+        height: 560px;     /*alto*/   
     }
 
-    /* NO ME FUNCIONA EL GRID SI COLOCO OTRO EN OTRA RESOLUCION MAYOR */
     .lista-videos-grid{
         grid-template-columns: 1fr 1fr;
         list-style: none;
@@ -280,8 +298,6 @@ img{
         "video3 video4"
         ;
     }
-
-
     }
 
 @media screen and (min-width: 1280px){
@@ -289,16 +305,16 @@ img{
     .contacto{
         margin-bottom: 200px;
         }
-    }
-/* NO FUNCIONA BIEN ESTE GRID, SI LE SACO EL COMENTARIO, ME DEJA DE FUNCIONAR EL GRID PARA LA MEDIA QUERY DE 768 */
-    /* .lista-servicios-grid{   
+    
+
+    .lista-servicios-grid{   
         grid-template-columns: 1fr 1fr 1fr 1fr;                         
         grid-template-areas:
         "item1 item2 item3 item4"
         "item5 item6 item7 item8"
         ;
-    } */
-
+    }
+    }
 
 @media screen and (min-width: 2400px){
 
@@ -306,3 +322,5 @@ img{
         margin-bottom: 880px;
         }
     }
+
+/* HASTA ACA TODO LO MIO */
