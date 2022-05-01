@@ -30,15 +30,24 @@ body {
 
 .header-logo{
     position: relative;
-    left: -80px;
+    left: -240px;
     top: 30px;
     display: inline-block;
+    opacity: 0;
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode:forwards;
+}
+
+.efecto0{
     transition-property: all;
     transition-duration: 0.7s;
     transition-timing-function: ease;
 }
 
-.header-logo:hover{
+.efecto0:hover{
     transform: scale(1.1);
 }
 
@@ -119,6 +128,15 @@ main{
 
 .efecto2:hover{
     transform: rotate(360deg);
+}
+
+.efecto3{
+    animation-name: efecto3;
+    animation-duration: 1.5s;
+    opacity: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 
 main section{
@@ -323,4 +341,22 @@ img {border-radius: 15px;}
         }
     }
 
-/* HASTA ACA TODO LO MIO */
+/* ANIMACIONES */
+
+@keyframes fade-in{
+    0%{
+        transform: translateX(80px);
+        opacity: 0;    
+    }
+    100%{transform: translateX(150px);
+        opacity: 1;
+    }
+}
+
+@keyframes efecto3{
+    0%{
+        opacity: 0;    
+    }
+    100%{opacity: 1;
+    }
+}
