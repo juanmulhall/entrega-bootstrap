@@ -267,14 +267,14 @@ h3{
 height: 10px;
 justify-content: center;
 align-content: center;
-display: flex;
+display:inline-flex !important;
 font-size: 15px;
 }
 
 .card-header{
     justify-content: center;
     align-content: center;
-    display: flex;
+    display: inline-flex !important;
     font-size: 15px;
     }
 
