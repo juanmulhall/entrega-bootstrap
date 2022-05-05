@@ -220,7 +220,11 @@ h3{
     margin-top: 20px;
 }
 
-.lista-servicios-grid{
+.separaciones{
+    margin-bottom: 50px;
+}
+
+/* .lista-servicios-grid{
     list-style: none;
     display: grid;
     grid-template-areas:
@@ -232,20 +236,20 @@ h3{
     "item6"
     "item7"
     "item8"
-    ;}
+    ;} */
 
-.item1 { grid-area: item1; }
+/* .item1 { grid-area: item1; }
 .item2 { grid-area: item2; }
 .item3 { grid-area: item3; }
 .item4 { grid-area: item4; }
 .item5 { grid-area: item5; }
 .item6 { grid-area: item6; }
 .item7 { grid-area: item7; }
-.item8 { grid-area: item8; }
+.item8 { grid-area: item8; } */
 
-.iframe{width: auto; height: auto;}
+.iframe{width: 350px; height: 300px;}
 
-.lista-videos-grid{
+/* .lista-videos-grid{
     list-style: none;
     display: grid;
     grid-template-areas: 
@@ -254,12 +258,12 @@ h3{
     "video3"
     "video4"
     ;
-}
-
+} */
+/* 
 .video1{ grid-area: video1; }
 .video2{ grid-area: video2; }
 .video3{ grid-area: video3; }
-.video4{ grid-area: video4; }
+.video4{ grid-area: video4; } */
 
 /* ------- FOOTER ------- */
 
@@ -294,13 +298,15 @@ font-size: 15px;
 
 img {border-radius: 15px;}
 
+.img {border-radius: 50px; width:min-content; height: 500px;}
+
 .footer {
     text-align: center;
     background-color: rgba(211, 211, 211, 0.658);
     width: 100vw;
     bottom: 0;
 }
-
+/* 
 @media screen and (min-width: 768px){
 
     .main-section{
@@ -322,8 +328,8 @@ img {border-radius: 15px;}
     }
 
     .formulario2{
-        width: 550px;       /*ancho*/
-        height: 560px;     /*alto*/   
+        width: 550px;      
+        height: 560px;       
     }
 
     .lista-videos-grid{
@@ -335,8 +341,8 @@ img {border-radius: 15px;}
         "video3 video4"
         ;
     }
-    }
-
+    } */
+/* 
 @media screen and (min-width: 1280px){
 
     .contacto{
@@ -358,7 +364,7 @@ img {border-radius: 15px;}
     .contacto{
         margin-bottom: 880px;
         }
-    }
+    } */
 
 /* ANIMACIONES */
 
