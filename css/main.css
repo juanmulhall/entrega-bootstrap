@@ -298,7 +298,11 @@ font-size: 15px;
 
 img {border-radius: 15px;}
 
-.img {border-radius: 50px; width:min-content; height: 500px; margin-bottom: 50px;}
+.img {border-radius: 50px;
+    margin-bottom: 50px;
+    height: 350px !important;
+    width: 300px !important;
+    }
 
 .footer {
     text-align: center;
