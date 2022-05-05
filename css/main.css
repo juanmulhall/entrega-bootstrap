@@ -105,6 +105,10 @@ body {
     text-decoration:underline;
 }
 
+.bg-gris{
+    background-color: grey;
+}
+
 /* ------- MAIN ------- */
 
 main{
