@@ -10,7 +10,7 @@
 /* ------- BODY DE TODOS MIS HTML ------- */
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,6 +87,10 @@ body {
     padding: 10px;
     position: relative;
     top:-108px;
+}
+
+.nav-link{
+    color: rgb(13, 13, 114) !important;
 }
 
 .nav-item{
