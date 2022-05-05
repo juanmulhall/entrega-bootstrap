@@ -263,6 +263,21 @@ h3{
 
 /* ------- FOOTER ------- */
 
+.card-body{
+height: 10px;
+justify-content: center;
+align-content: center;
+display: flex;
+font-size: 15px;
+}
+
+.card-header{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    font-size: 15px;
+    }
+
 .contacto{
     display: flex;
     justify-content: space-evenly;
