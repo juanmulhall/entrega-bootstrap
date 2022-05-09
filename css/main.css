@@ -21,10 +21,9 @@ body {
 .header-flex{
     display: flex;
     flex-direction: column;
-    background-color: rgba(211, 211, 211, 0.658);
+    background-color: rgb(255, 255, 255);
     justify-items: center;
     align-items: center;
-    height: 290px;
     margin-bottom: 25px;
 }
 
@@ -106,7 +105,7 @@ body {
 }
 
 .bg-gris{
-    background-color: rgba(211, 211, 211, 0.658);
+    background-color: rgba(243,251,254,255);
 }
 
 .menu{
